@@ -1,8 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{ values.name | dump }}
+  name: backstage-templates
+  annotations:
+    github.com/project-slug: raskolinikov/backstage-templates/skeleton
 spec:
-  type: service
-  owner: user:guest
-  lifecycle: experimental
+  type: other
+  lifecycle: unknown
+  owner: guests
