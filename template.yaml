@@ -44,6 +44,8 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+            allowedOwners:
+              - unicredit
         owner:
           title: Owner
           type: string
