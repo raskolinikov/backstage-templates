@@ -25,12 +25,8 @@ spec:
             rows: 5
     - title: Choose a location
       required:
-        - owner
         - repoUrl
       properties:
-        owner:
-          title: Component owner
-          type: string
         repoUrl:
           title: Repository Location
           type: string
