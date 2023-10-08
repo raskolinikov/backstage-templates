@@ -59,6 +59,7 @@ spec:
       id: create-catalog-info-file
       name: Create catalog file
       input:
+        filePath: '.backstage/catalog-info.yaml'
         entity:
           apiVersion: backstage.io/v1alpha1
           kind: Component
@@ -68,8 +69,7 @@ spec:
           spec:
             type: service
             lifecycle: production
-            owner: ${{ parameters.name }}
-        filePath: './catalog-info.yaml'
+            owner: ${{ parameters.owner }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
