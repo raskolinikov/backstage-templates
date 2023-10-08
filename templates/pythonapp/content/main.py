@@ -1,1 +1,1 @@
-print("hello world!")
+print("This is the "+ ${{ values.name }} +"application create from a template!")
