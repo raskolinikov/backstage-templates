@@ -8,4 +8,5 @@ metadata:
     'backstage.io/kubernetes-namespace': dice-space
 spec:
   type: service
+  owner: ${{ values.owner | dump }} 
   lifecycle: experimental
