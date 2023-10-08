@@ -7,4 +7,4 @@ spec:
     displayName: Jenny Doe
     email: jenny-doe@example.com
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
-  memberOf: [team-b, employees]
+#  memberOf: [team-b, employees]
