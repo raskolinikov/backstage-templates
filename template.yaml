@@ -59,7 +59,7 @@ spec:
       id: create-catalog-info-file
       name: Create catalog file
       input:
-        filePath: '.backstage/catalog-info.yaml'
+        filePath: './catalog-info.yaml'
         entity:
           apiVersion: backstage.io/v1alpha1
           kind: Component
