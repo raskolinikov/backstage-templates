@@ -68,7 +68,7 @@ spec:
           spec:
             type: service
             lifecycle: production
-            owner: ${{ parameters.owner }}
+            owner: ${{ parameters.name }}
         filePath: '/catalog-info.yaml'
 
     # This step publishes the contents of the working directory to GitHub.
