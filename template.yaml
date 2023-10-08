@@ -55,6 +55,20 @@ spec:
         url: ./content
         values:
           name: ${{ parameters.name }}
+    - action: catalog:write
+      id: create-catalog-info-file
+      name: Create catalog file
+      input:
+        entity:
+          apiVersion: backstage.io/v1alpha1
+          kind: Component
+          metadata:
+            name: ${{ parameters.name }}
+            annotations: {}
+          spec:
+            type: service
+            lifecycle: production
+            owner: ${{ parameters.name }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
