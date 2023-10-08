@@ -8,5 +8,4 @@ metadata:
     'backstage.io/kubernetes-namespace': dice-space
 spec:
   type: service
-  owner: user:guest
   lifecycle: experimental
