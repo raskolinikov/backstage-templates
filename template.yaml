@@ -24,18 +24,18 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-        # owner:
-        #   title: Owner
-        #   type: string
-        #   description: Owner of the component
-        #   ui:field: OwnerPicker
-        #   ui:options:
-        #     catalogFilter:
-        #       kind: Group            
+        owner:
+          title: Component Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            catalogFilter:
+              kind: [Group, User]              
     - title: Choose a location
       required:
+        - owner      
         - repoUrl
-        - owner
       properties:
         repoUrl:
           title: Repository Location
@@ -45,15 +45,7 @@ spec:
             allowedHosts:
               - github.com
             allowedOwners:
-              - unicredit
-        owner:
-          title: Owner
-          type: string
-          description: Owner of the component
-          ui:field: OwnerPicker
-          ui:options:
-            catalogFilter:
-              kind: [Group, User]           
+              - unicredit       
 
   # These steps are executed in the scaffolder backend, using data that we gathered
   # via the parameters above.
