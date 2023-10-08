@@ -51,7 +51,7 @@ spec:
           ui:field: OwnerPicker
           ui:options:
             catalogFilter:
-              kind: Group           
+              kind: [Group, User]           
 
   # These steps are executed in the scaffolder backend, using data that we gathered
   # via the parameters above.
